@@ -48,9 +48,19 @@ Step 6: Move the second turtle
 ros2 topic pub /turtle2/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angular: {z: 0.0}}"
 ```
 5. Visual Results and Analysis
+6. 
 Figure 1: This image demonstrates a single turtle drawing a V-shape pattern using manually
+
+<img width="471" height="507" alt="image" src="https://github.com/user-attachments/assets/1e834c97-c562-4cc4-87c3-996f9c636a75" />
+
+
 published velocity commands. The turtle follows a path influenced by a combination of linear and
 angular velocities.
+
+
+<img width="332" height="335" alt="image" src="https://github.com/user-attachments/assets/c2c019f6-e256-485d-b33e-0e6b6a31604c" />
+
+
 Figure 2: Here, two turtles are used simultaneously. The first turtle performs angular turns while the
 second draws straight lines. This setup illustrates the power of multi-turtle spawning and coordinated
 motion using ROS 2 topics.
