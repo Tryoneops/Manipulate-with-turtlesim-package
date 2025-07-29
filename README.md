@@ -1,11 +1,11 @@
 
 # Task 3: Manipulate with Turtlesim Package in ROS 2
 
-## 2. Introduction
+## 1. Introduction
 The purpose of this task is to demonstrate practical manipulation of the turtlesim package in ROS 2.  
 Turtlesim is a lightweight simulator used primarily for teaching core concepts of ROS (Robot Operating System), including topics, services, publishers, and subscribers. This report elaborates on how to control a turtle's movement, draw patterns, spawn additional turtles, and utilize ROS communication methods through a series of structured commands and scripts.
 
-## 3. Objective
+## 2. Objective
 The primary objective is to use the turtlesim node to simulate turtle movements and control them using ROS 2 mechanisms such as:
 - Velocity commands through topics
 - Position control through services
@@ -14,14 +14,14 @@ The primary objective is to use the turtlesim node to simulate turtle movements 
 
 This exercise lays foundational understanding for robot control and motion planning in future complex systems.
 
-## 4. ROS 2 Concepts Used
+## 3. ROS 2 Concepts Used
 - **Node**: An executable representing a process. E.g., `turtlesim_node` is responsible for displaying the turtle simulation window.
 - **Topic**: A named communication channel over which nodes exchange messages. `/turtle1/cmd_vel` is used to move the turtle.
 - **Publisher**: A node that sends messages to a topic.
 - **Subscriber**: A node that receives messages from a topic.
 - **Service**: Allows a node to send a request and receive a response. Services like `teleport_absolute`, `clear`, and `spawn` are utilized.
 
-## 5. Command Execution and Steps
+## 4. Command Execution and Steps
 
 ### Step 1: Launch the Turtlesim Node
 ```bash
@@ -53,7 +53,7 @@ ros2 service call /spawn turtlesim/srv/Spawn "{x: 2.0, y: 3.0, theta: 0.0, name:
 ros2 topic pub /turtle2/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0}, angular: {z: 0.0}}"
 ```
 
-## 6. Visual Results and Analysis
+## 5. Visual Results and Analysis
 
 **Figure 1**: This image demonstrates a single turtle drawing a V-shape pattern using manually published velocity commands.  
 The turtle follows a path influenced by a combination of linear and angular velocities.  
