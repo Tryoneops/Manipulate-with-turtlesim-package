@@ -1,5 +1,5 @@
 
-# Task 3: Manipulate with Turtlesim Package in ROS 2
+#  Manipulate with Turtlesim Package in ROS 2
 
 ## 1. Introduction
 The purpose of this task is to demonstrate practical manipulation of the turtlesim package in ROS 2.  
